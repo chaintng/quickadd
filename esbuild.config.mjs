@@ -54,7 +54,7 @@ const options = Object.freeze({
 			compilerOptions: { css: true },
 			preprocess: sveltePreprocess(),
 		}),
-		...(!prod
+		...(!prod & false
 			? [
 					copy({
 						resolveFrom: "cwd",
